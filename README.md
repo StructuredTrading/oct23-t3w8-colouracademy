@@ -24,6 +24,16 @@
 	- One Theme List 
 
 
+- Current CSS theme
+	- one theme list 
+	- localstorage 
+- List of CSS themes
+	- array of theme list
+	- localstorage 
+- Base Colour 
+
+
+
 ## Data 
 
 ### Colour Object 
@@ -46,3 +56,8 @@
 	]
 }
 ```
+
+
+# Note for Next Lesson
+
+- [x] Alex needs to find the autoimport package and share that 

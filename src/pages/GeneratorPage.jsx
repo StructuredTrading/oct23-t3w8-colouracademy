@@ -5,6 +5,7 @@ import { useCurrentThemeData } from "../contexts/currentThemeContext";
 import { ColourBlock } from "../components/ColourBlock";
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
+import { CssCodeExport } from "../components/CssCodeExports";
 
 
 export default function GeneratorPage(){
@@ -38,7 +39,7 @@ export default function GeneratorPage(){
 				header={currentTheme.displayName}
 				footer={
 					<div>
-					<h6>Thakyou for generating some colours!</h6>
+					<h6>Thankyou for generating some colours!</h6>
 					</div>
 				}
 				isOpen={modal}
@@ -48,13 +49,12 @@ export default function GeneratorPage(){
 					setModal(false);
 					return true;
 				}}
-				>
-				<p>Your content</p>
-				</PureModal>
-
-				<button onClick={() => setModal(!modal)}>
-					Toggle Modal
-				</button>
+			>
+				<CssCodeExport />
+			</PureModal>
+			<button onClick={() => setModal(!modal)}>
+				Toggle Modal
+			</button>
 
 			{/* Base colour input form */}
 			<h1>{formBaseColour}</h1>

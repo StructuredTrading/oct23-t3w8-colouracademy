@@ -22,9 +22,11 @@ export function CurrentThemeProvider({children}){
 
 	let baseColour = useBaseColourGlobalData();
 
-    useEffect(() => {
-        setCurrentTheme(generateTones(baseColour));
-    }, [baseColour]);
+
+	useEffect(() => {
+		setCurrentTheme(generateTones(baseColour));
+	}, [baseColour]);
+
 
 	useEffect(() => {
 		// On component load, read from localstorage and set it to state 
@@ -38,7 +40,7 @@ export function CurrentThemeProvider({children}){
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [currentTheme]);
 
-	
+
 
 	return (
 		<CurrentThemeDataContext.Provider value={currentTheme}>

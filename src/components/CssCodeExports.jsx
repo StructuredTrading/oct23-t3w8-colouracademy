@@ -27,6 +27,9 @@ export function CssCodeExport(){
 				{buildCssVariableString()}
 			</SyntaxHighlighter>
 
+			<button onClick={() => navigator.clipboard.writeText(buildCssVariableString())}>
+				Copy code to clipboard
+			</button>
 		</div>
 	)
 }

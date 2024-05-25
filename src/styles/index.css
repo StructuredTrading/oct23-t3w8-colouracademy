@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--theme-background);
+  color: var(--theme-text-colour);
 }
 
 code {
@@ -12,13 +15,6 @@ code {
     monospace;
 }
 
-
-/* .pure-modal-backdrop {
-  .pure-modal {
-    width: 50dvw;
-    height: 50dvw;
-  }
-} */
 
 .pure-modal-backdrop {
   div.pure-modal {

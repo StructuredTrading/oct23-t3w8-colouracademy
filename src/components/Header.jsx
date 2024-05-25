@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import "../styles/Header.css";
 
 export default function Header(){
 
@@ -11,7 +11,7 @@ export default function Header(){
 			<nav id="headerNavbar">
 				<button><NavLink to={"/"} >Home</NavLink></button>
 				<button><NavLink to={"/generator"} >Generator</NavLink></button>
-				<button><NavLink to={"/generator/saved"} >Saved Themes</NavLink></button>
+				{/* <button><NavLink to={"/generator/saved"} >Saved Themes</NavLink></button> */}
 			</nav>
 		</header>
 	)

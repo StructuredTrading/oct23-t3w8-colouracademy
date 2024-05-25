@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* .pure-modal-backdrop {
+  .pure-modal {
+    width: 50dvw;
+    height: 50dvw;
+  }
+} */
+
+.pure-modal-backdrop {
+  div.pure-modal {
+    width: 50dvw;
+  }
+}
